@@ -1,0 +1,345 @@
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans');
+    html {
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font: 100%/1.4 'Open Sans', Helvetica;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-image: url(img/desktop.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        background-color: #fc86a9;
+        color: #fff;
+        margin-top: 2rem;
+    }
+
+    nav ul {
+        display: block;
+        background-color: #261d36;
+        padding: 0.5rem 1rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        font-size: 1.2rem;
+        list-style-type: none;
+        z-index: 5;
+    }
+
+    nav ul li {
+        display: inline-block;
+        color: #fff;
+        padding: 0 1rem;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .wrapper {
+        width: 100%;
+        background: none;
+        margin: 0 auto;
+    }
+    
+    main {
+        justify-self: center;
+        margin: 0 auto;
+        background: #e0ecfa;
+    }
+    
+    #intro {
+        padding: 0 40px;
+    }
+    
+    #projects {
+        color: #fff;
+        padding: 40px;
+    }
+    
+    #projects article {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
+    
+    #gallery article {
+        max-width: auto;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 3rem;
+    }
+
+    #commercials article {
+        max-width: 800px;
+        justify-content: center;
+        display: inline-block;
+        padding: 3rem;
+    }
+    
+    #projects article img,
+    #gallery article img,
+    #commercials article img {
+        width: 100%;
+    }
+    
+    footer {
+        background-color: #6f559b;
+        color: #fff;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+        line-height: 1;
+        text-align: left;
+    }
+    
+    .social-icons {
+        grid-row: row;
+        align-self: start;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fc86a9;
+        font-size: 2.6em;
+        margin-top: 0;
+        padding: 4rem 2rem 0 2rem;
+        padding-bottom: 0;
+        line-height: 1;
+    }
+    
+    .title {
+        font-size: .8em;
+        color: #65fcef;
+    }
+    
+    .title:before {
+        content: "| ";
+        color: #c4cfda;
+    }
+    
+    .slogan {
+        color: #c4cfda;
+        padding: 0 2rem;
+        margin: 0;
+    }
+    
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        color: #6f559b;
+    }
+    
+    h3 {
+        color: #666;
+    }
+
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        margin: 0;
+        padding: 0 2rem;
+
+    }
+    
+    p {
+        line-height: 1.8;
+    }
+    
+    ul {
+        margin: 0;
+    }
+    
+    strong {
+        color: #000;
+    }
+    
+    a {
+        color: #fff;
+    }
+    
+    small {
+        color: #fff;
+    }
+    
+    .tag {
+        background-color: #6f559b;
+        color: #65fcef;
+        border-radius: 0.5rem;
+        padding: 0 0.3rem;
+    }
+    
+    .social-icons {
+        text-align: left;
+        padding-top: 0.5rem;
+        max-width: 100%;
+    }
+    
+    .social-icons a {
+        padding-right: 11px;
+        display: inline-block;
+        outline: 0;
+    }
+    
+    .social-icons img {
+        width: 37px;
+        outline: 0;
+    }
+    
+    .social-icons a:last-child {
+        padding-right: 0;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 98.5%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #fff;
+      border: 1px solid #d0d0d0;
+      border-radius: 5px;
+    }
+
+    .container:hover .overlay, .container:active .overlay {
+      opacity: 1;
+      -webkit-tab-highlight-color: transparent;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+    }
+
+    .text {
+      color: #261d36;
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+    }
+    
+    .image {
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #d0d0d0;
+      border-radius: 5px;
+    }
+    
+    @media only screen and (max-width: 770px) {
+        header {
+            background-size: 100%;
+            background-position: top;
+            height: 50vh;
+        }
+        h1 {
+            font-size: 1.6rem;
+            margin-top: -2rem;
+        }
+        h4 {
+            font-size: 0.8rem;
+        }
+        #projects article {
+            max-width: auto;
+            grid-template-columns: 1fr 1fr;
+        }
+        .break {
+            display: block;
+        }
+        .slogan {
+            font-size: 0.8rem;
+            line-height: 1;
+        }
+    }
+    
+    @media only screen and (max-width: 450px) {
+        header {
+            background-size: 100%;
+            background-position: top;
+            height: 58vh;
+        }
+        h1 {
+            padding: 15rem 1rem 0 1rem;
+            color: #6f559b;
+            line-height: 0.8;
+        }
+        h4 {
+            padding: 0 1rem;
+        }
+        #projects {
+            background: none;
+        }
+        #projects article {
+            display: block;
+            padding: 0;
+        }
+        .container {
+            margin-bottom: 2rem;
+        }
+        #projects article img {
+            width: 100%;
+        }
+        .title {
+            display: block;
+            padding-top: 10px;
+            font-size: 0.6em;
+        }
+        .title:before {
+            content: none;
+        }
+        .slogan {
+            padding: 0 1rem;
+            color: #261d36;
+        }
+        #intro article p {
+            margin-right: 6.5rem;
+            font-size: smaller;
+        }
+        nav ul {
+            padding: 0.2rem;
+        }
+        footer {
+            padding: 0.5rem;
+            text-align: center;
+        }
+        .social-icons, small {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .hide {
+            display: none;
+        }
+    }
